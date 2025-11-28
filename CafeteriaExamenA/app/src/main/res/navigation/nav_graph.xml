@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_inicio">
+
+    <fragment
+        android:id="@+id/nav_inicio"
+        android:name="com.example.cafeteriaexamen.fragments.InicioFragment"
+        android:label="Inicio"
+        tools:layout="@layout/fragment_inicio" />
+
+    <fragment
+        android:id="@+id/nav_registro"
+        android:name="com.example.cafeteriaexamen.fragments.RegistroFragment"
+        android:label="Registro/Login"
+        tools:layout="@layout/fragment_registro" />
+
+    <fragment
+        android:id="@+id/nav_estado_pedido"
+        android:name="com.example.cafeteriaexamen.fragments.EstadoPedidoFragment"
+        android:label="Estado del Pedido"
+        tools:layout="@layout/fragment_estado_pedido">
+
+        <!-- ✅ TRANSICIÓN AL DETALLE -->
+        <action
+            android:id="@+id/action_estado_to_detalle"
+            app:destination="@id/detallePedidoFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/detallePedidoFragment"
+        android:name="com.example.cafeteriaexamen.fragments.DetallePedidoFragment"
+        android:label="Detalle del Pedido"
+        tools:layout="@layout/fragment_detalle_pedido" />
+
+    <fragment
+        android:id="@+id/nav_satisfaccion"
+        android:name="com.example.cafeteriaexamen.fragments.SatisfaccionFragment"
+        android:label="Valorar Experiencia"
+        tools:layout="@layout/fragment_satisfaccion" />
+
+</navigation>

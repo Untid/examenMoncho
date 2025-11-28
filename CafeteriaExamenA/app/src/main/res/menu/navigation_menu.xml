@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_inicio"
+        android:icon="@android:drawable/ic_menu_view"
+        android:title="Inicio" />
+    <item
+        android:id="@+id/nav_registro"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:title="Registro/Login" />
+    <item
+        android:id="@+id/nav_estado_pedido"
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:title="Estado del Pedido" />
+    <item
+        android:id="@+id/nav_satisfaccion"
+        android:title="Valorar Experiencia"
+        android:icon="@android:drawable/ic_menu_edit"/>
+</menu>
