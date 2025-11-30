@@ -15,6 +15,8 @@ const io = socketIo(server, {
   }
 });
 
+
+// Hola buenos dias alblaba
 // Middleware
 app.use(cors());
 app.use(express.json());

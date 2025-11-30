@@ -3,7 +3,7 @@ const express = require('express');
 const router = express.Router();
 const mysqlPool = require('../db/mysql');
 const { conectar } = require('../db/mongo');
-
+// ablabpaksfgagaiga+
 // ✅ GET /menu → desde MySQL CON IMÁGENES
 router.get('/menu', async (req, res) => {
   try {
